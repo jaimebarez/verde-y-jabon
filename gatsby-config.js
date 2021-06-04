@@ -5,10 +5,11 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `images`,
-        path: path.join(__dirname, `src`, `images`),
+        name: `verdeyjabon_images`,
+        path: path.join(__dirname, `src`, `images`, `targets`),
       },
     },
+    `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
   ],
