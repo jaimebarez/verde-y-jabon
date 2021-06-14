@@ -24,7 +24,6 @@ const IndexPage = ({ data }) => (
       )
     })}
 
-    <br />
     <center>
       <a
         href="https://www.instagram.com/verdeyjabon/"
@@ -33,7 +32,6 @@ const IndexPage = ({ data }) => (
       >
         @verdeyjabon
       </a>
-      <br />
       <br />
       <a href="mailto:verdeyjabon@gmail.com" target="_blank" rel="noreferrer">
         verdeyjabon@gmail.com
@@ -49,6 +47,7 @@ const IndexPage = ({ data }) => (
         ❤️
       </span>
     </small>
+    <br />
   </>
 )
 
