@@ -23,6 +23,14 @@ module.exports = {
           //"AW-CONVERSION_ID", // Google Ads / Adwords / AW
           //"DC-FLOODIGHT_ID", // Marketing Platform advertising products (Display & Video 360, Search Ads 360, and Campaign Manager)
         ],
+        pluginConfig: {
+          // Puts tracking script in the head instead of the body
+          head: true,
+          // Setting this parameter is also optional
+          //respectDNT: true,
+          // Avoids sending pageview hits from custom paths
+          exclude: ["/preview/**", "/do-not-track/me/too/"],
+        }
       },
     },
     `gatsby-plugin-image`,
