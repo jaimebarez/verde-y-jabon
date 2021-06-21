@@ -5,20 +5,21 @@
  * div with role="group"
 */
 
-html, body, #___gatsby {
-    width: 100%;
-    
+html,
+body,
+#___gatsby {
+  width: 100%;
 }
 
 body {
-    margin: 0px;
-    background-color: #f3f6c8;
+  margin: 0px;
+  background-color: #f3f6c8;
 }
 
 div[role="group"][tabindex] {
-    height: 100%;
+  height: 100%;
 }
 
 a {
-    color: #d68db6;
-  }
+  color: #d68db6;
+}

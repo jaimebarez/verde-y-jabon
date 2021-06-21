@@ -2,6 +2,7 @@ import React from "react"
 import { graphql } from "gatsby"
 
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
+import { OutboundLink } from "gatsby-plugin-google-gtag"
 
 const LAST_IMAGE_NAME = "target_00013"
 
@@ -12,18 +13,17 @@ const IndexPage = ({ data }) => (
       const name = edge.node.name
       const gatsby_image = <GatsbyImage image={image} />
       return name === LAST_IMAGE_NAME ? (
-        <a
+        <OutboundLink
           href="https://www.instagram.com/verdeyjabon/"
           target="_blank"
           rel="noreferrer"
         >
           {gatsby_image}
-        </a>
+        </OutboundLink>
       ) : (
         gatsby_image
       )
     })}
-
     <center>
       <a
         href="https://www.instagram.com/verdeyjabon/"
@@ -40,14 +40,17 @@ const IndexPage = ({ data }) => (
       <br />
       <br />
     </center>
-
-    <small>
-      Hecho con{" "}
-      <span role="img" aria-label="love">
-        ❤️
-      </span>
-    </small>
-    <br />
+    <p>
+      <small>
+        {". "}Hecho con{" "}
+        <span role="img" aria-label="love">
+          ❤️
+        </span>
+      </small>
+      <center>
+        <img src="" /*alt=""*/></img>
+      </center>
+    </p>
   </>
 )
 
