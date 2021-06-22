@@ -41,10 +41,26 @@ module.exports = {
         },
       },
     },
+    {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: [`Poiret One`],
+        display: "swap",
+      },
+    },
+    {
+      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      options: {
+        fonts: [
+          {
+            family: `Poiret One`,
+          },
+        ],
+      },
+    },
     `gatsby-plugin-image`,
     `gatsby-transformer-sharp`,
     `@fontsource/poiret-one`,
     `react-use-cart`,
-    'gatsby-plugin-prefetch-google-fonts'
   ],
 }
