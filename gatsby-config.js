@@ -19,7 +19,7 @@ module.exports = {
       resolve: `gatsby-plugin-google-gtag`,
       options: {
         trackingIds: [
-          "G-5C088857K8", // Google Analytics / GA
+          process.env.GA_TRACKING_ID, // Google Analytics / GA
           //"AW-CONVERSION_ID", // Google Ads / Adwords / AW
           //"DC-FLOODIGHT_ID", // Marketing Platform advertising products (Display & Video 360, Search Ads 360, and Campaign Manager)
         ],
@@ -30,11 +30,18 @@ module.exports = {
           //respectDNT: true,
           // Avoids sending pageview hits from custom paths
           exclude: ["/preview/**", "/do-not-track/me/too/"],
-        }
+        },
+      },
+    },
+    {
+      resolve: `gatsby-plugin-sharp`,
+      options: {
+        defaults: {
+          quality: 100,
+        },
       },
     },
     `gatsby-plugin-image`,
-    `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
   ],
 }
