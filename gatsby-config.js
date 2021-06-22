@@ -45,5 +45,6 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `@fontsource/poiret-one`,
     `react-use-cart`,
+    'gatsby-plugin-prefetch-google-fonts'
   ],
 }

@@ -18,6 +18,7 @@
     "gatsby": "^3.6.2",
     "gatsby-plugin-google-gtag": "^3.7.1",
     "gatsby-plugin-image": "^1.6.0",
+    "gatsby-plugin-prefetch-google-fonts": "^1.4.3",
     "gatsby-plugin-sharp": "^3.6.0",
     "gatsby-plugin-typography": "^3.7.1",
     "gatsby-source-filesystem": "^3.6.0",
