@@ -1,6 +1,6 @@
 import React from "react"
 import { graphql } from "gatsby"
-import VerdeyJabonCart from "../components/cart"
+// import VerdeyJabonCart from "../components/cart"
 
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import { OutboundLink } from "gatsby-plugin-google-gtag"
@@ -26,7 +26,7 @@ const IndexPage = ({ data }) => (
       )
     })}
 
-    <VerdeyJabonCart></VerdeyJabonCart>
+    {/* <VerdeyJabonCart></VerdeyJabonCart> */}
     <center>
       <a
         href="https://www.instagram.com/verdeyjabon/"
