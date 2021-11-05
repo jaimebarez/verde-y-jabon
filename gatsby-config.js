@@ -41,7 +41,17 @@ module.exports = {
         },
       },
     },
+    {
+      resolve: `gatsby-plugin-web-font-loader`,
+      options: {
+        google: {
+          families: ["Poiret One"],
+        },
+      },
+    },
     `gatsby-plugin-image`,
     `gatsby-transformer-sharp`,
+    `@fontsource/poiret-one`,
+    `react-use-cart`,
   ],
 }

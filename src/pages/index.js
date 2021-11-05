@@ -1,5 +1,6 @@
 import React from "react"
 import { graphql } from "gatsby"
+// import VerdeyJabonCart from "../components/cart"
 
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import { OutboundLink } from "gatsby-plugin-google-gtag"
@@ -11,7 +12,7 @@ const IndexPage = ({ data }) => (
     {data.allFile.edges.map(edge => {
       const image = getImage(edge.node.childImageSharp)
       const name = edge.node.name
-      const gatsby_image = <GatsbyImage image={image} />
+      const gatsby_image = <GatsbyImage image={image} /*alt=""*/ />
       return name === LAST_IMAGE_NAME ? (
         <OutboundLink
           href="https://www.instagram.com/verdeyjabon/"
@@ -24,6 +25,8 @@ const IndexPage = ({ data }) => (
         gatsby_image
       )
     })}
+
+    {/* <VerdeyJabonCart></VerdeyJabonCart> */}
     <center>
       <a
         href="https://www.instagram.com/verdeyjabon/"
@@ -42,14 +45,11 @@ const IndexPage = ({ data }) => (
     </center>
     <p>
       <small>
-        {". "}Hecho con{" "}
-        <span role="img" aria-label="love">
+        &nbsp; Hecho con{" "}
+        <span role="img" aria-label="heart">
           ❤️
         </span>
       </small>
-      <center>
-        <img src="" /*alt=""*/></img>
-      </center>
     </p>
   </>
 )

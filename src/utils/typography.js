@@ -1,24 +1,10 @@
 import Typography from "typography"
-import funstonTheme from "typography-theme-wordpress-2016"
+import "@fontsource/poiret-one"
 
-funstonTheme.baseFontSize = "25"
-funstonTheme.bodyColor = "#9984cb"
-
-const typography = new Typography(
-  /*     {
-  baseFontSize: "18px",
-  baseLineHeight: 1.666,
-  headerFontFamily: [
-    "Avenir Next",
-    "Helvetica Neue",
-    "Segoe UI",
-    "Helvetica",
-    "Arial",
-    "sans-serif",
-  ],
-  bodyFontFamily: ["Georgia", "serif"],
-} */
-
-  funstonTheme
-)
+const typography = new Typography({
+  baseFontSize: "30",
+  bodyColor: "#9984cb",
+  bodyFontFamily: ["Poiret One"],
+  bodyWeight: "bolder",
+})
 export default typography

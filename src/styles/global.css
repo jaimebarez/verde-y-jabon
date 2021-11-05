@@ -9,6 +9,7 @@ html,
 body,
 #___gatsby {
   width: 100%;
+  font-family: "Poiret One";
 }
 
 body {
@@ -22,4 +23,49 @@ div[role="group"][tabindex] {
 
 a {
   color: #d68db6;
+}
+
+ul {
+  list-style-type: none;
+}
+
+hr {
+  margin-left: 5em;
+  margin-right: 5em;
+}
+
+.div-table {
+  display: table;
+  width: auto;
+  border-spacing: 5px; /* cellspacing:poor IE support for  this */
+}
+.div-table-row {
+  display: table-row;
+  width: auto;
+  clear: both;
+  padding-bottom: 10px;
+}
+.div-table-col {
+  float: left; /* fix for  buggy browsers */
+  display: table-column;
+  width: auto;
+}
+
+.div-table-item {
+  padding: 0.1em;
+}
+
+.add_to_cart {
+  background-color: #9984cb; /* Green */
+
+  border: 5px;
+  color: white;
+  text-align: center;
+  border-radius: 50%;
+  padding: 1px 16px;
+  cursor: pointer;
+}
+
+.add_to_cart:hover {
+  background-color: #d68db6; /* Green */
 }
